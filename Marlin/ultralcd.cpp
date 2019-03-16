@@ -4146,6 +4146,15 @@ void lcd_quick_feedback(const bool clear_buttons) {
         STATIC_ITEM(MSG_INFO_MIN_TEMP ": " STRINGIFY(BED_MINTEMP), false);
         STATIC_ITEM(MSG_INFO_MAX_TEMP ": " STRINGIFY(BED_MAXTEMP), false);
       #endif
+    
+      #if TEMP_SENSOR_CHAMBER!=0
+        #undef THERMISTOR_ID
+        #define THERMISTOR_ID TEMP_SENSOR_CHAMBER
+        #include "thermistornames.h"
+        STATIC_ITEM("TBed:" THERMISTOR_NAME, false, true);
+        STATIC_ITEM(MSG_INFO_MIN_TEMP ": " STRINGIFY(BED_MINTEMP), false);
+        STATIC_ITEM(MSG_INFO_MAX_TEMP ": " STRINGIFY(BED_MAXTEMP), false);
+      #endif
       END_SCREEN();
     }
 
