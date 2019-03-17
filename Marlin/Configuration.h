@@ -609,7 +609,7 @@
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
  * Valores en drivers 32: #define DEFAULT_AXIS_STEPS_PER_UNIT   { 160, 160, 4023.5, 1893.93939375 }
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 2011,75, 946.96970 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 2011.75, 946.96970 }
 
 /**
  * Default Max Feed Rate (mm/s)
