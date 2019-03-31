@@ -1,0 +1,71 @@
+Indispensables:
+Extrusor Wade Ev3 (todas sus piezas)
+3 rodamientos de patines (no recuerdo el tamaño, solo se que en centro tiene 8mm de )
+Cristal 30cm x 30cm x (2mm/3mm)
+Angulos de acero de 90° para pared y para madera
+Madera: tamaño minimo requerido (35cm x 35cm x 1cm) x 2
+-Pared: https://articulo.mercadolibre.com.co/MCO-455867891-pie-de-amigo-para-estante-toolcraft-cafe-5-x6-_JM
+-Madera: Angulo de acero de 90° para madera... : https://goo.gl/images/LdNUzH
+Min 2 Metros de correa
+2 Resortes de 6mm para el Extrusor
+Tubo de 30mmx8mm (recorté un tubo de aluminio de 8mm que tenía por ahí)
+-Ej:https://articulo.mercadolibre.com.co/MCO-448742348-correa-gt2-distribucion-impresora-3d-cnc-robotica-x-1-metro-_JM?quantity=1
+3 Pares de rodamientos lineales para gavetas
+-Ej:https://goo.gl/images/XDJT4Q
+Tornillos 3mm x 30mm (Siempre es bueno que sobre)
+Tornillos 4mm x 35mm (Siempre es bueno que sobre)
+Tornillos 4/5mm x 100+mm (De estos no tantos)
+2 Tuercas para el tornillo del extrusor
+4 Arandelas para el tornillo del extrusor
+Tornillo especial para extrusor
+-https://articulo.mercadolibre.com.co/MCO-462903134-tornillo-moleteado-perno-hobbed-extrusor-wade-impresora-3d-_JM
+(Tuercas y arandelas no incluidas)
+Tornillos de 10mm para Madera
+Tuercas (al menos una por tornillo)
+Arandelas de los tamaños respectivos (Al menos 2 por tornillo)
+Barra roscada de al menos 30cm para cortar y ajustar dependiendo al tamaño deseado del eje Z
+2/3 Tuercas para la barra roscada
+Acople de motor a barra roscada
+X metros de cable par (rojo-negro) fino (a convenir)
+X metros de cable par para el extrusor (numero 12/14) (a convenir)
+No menos de 4 metros de cable de red
+Minimo 3 sensores endstop
+T 90° de Acero 5cm:
+-Parecido a: https://goo.gl/images/TVE6xn
+
+
+Herramientas:
+Serrucho, segueta
+Taladro
+Mecha/broca de Pared
+Ramplus/(como le llamen al coso plástico que va en la pared para colgar tornillos)
+Destornilladores
+Visturí/Cutter
+Cinta termo encogible
+Herramientas para soldar
+Pistola de silicón caliente con algunas barras extra (preferiblemente la grande para trabajos pesados)
+Mototool con herramienta de calador
+
+
+Sin impresiones:
+Madera del largo de las tablas (min 35cm) pero con ancho maximo del tamaño de la cama (30 cm) se prefiere madera de balsa o similar cuyo peso sea el menor posible, ya que esta madera será la base del eje X y será movido por el eje Y, por lo que reducir el peso reduce la vibración y aumenta la aceleración y por ende la velocidad de impresión y la calidad
+Retazos de madera para hacer de soporte
+Ingenio (Al trabajar de manera libre de instrucciones específicas tendrás que ingeniarte alguna que otra solución temporal mientras se consiguen las impresiones con la misma máquina)
+
+Impresiones del modelo:
+-Acople de Extrusor
+-Soporte de eje X (d/i)
+-Extensor de motor en Y
+-Soporte de eje Z
+-Calibrador de rotación eje Z
+-Soportes para sensores
+-Impresiones para fan cooler adaptable
+-Tope de eje Z
+
+
+Opcionales:
+Luces Led 12V
+Cama caliente
+Conectores Dupont (muy recomendado)
+-https://listado.mercadolibre.com.co/cable-conectores-protoboard#D[A:cable%20conectores%20protoboard]
+Conectores eléctricos para el HotEnd (que soporten al menos 100W)
