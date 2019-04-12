@@ -1,0 +1,19 @@
+@media screen {
+    body {  color: #666; font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; background-color: #fff;
+        background-image: url(images/general/bg.png);
+        background-size: cover;
+        background-repeat: no-repeat;}
+    #message { text-align:center;background: rgba(255,255,255,0.5); max-width: 360px; margin: 250px auto 16px; padding: 32px 24px; border-radius: 3px; }
+    #message img { box-shadow: 1px 1px 2px rgba(0,0,0,0.2); }
+    #message h2 { color: #231400; font-weight: bold; font-size: 36px; margin: 0 0 8px; }
+    #message h1 { font-size: 28px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
+    #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
+    #message a { margin:5px; display: inline-block; text-align: center; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
+    #message a img { width:100px; display: block; text-align: center; background: transparent !important; text-transform: uppercase; text-decoration: none; box-shadow: none; padding: 0px; border-radius: 4px; width: 100px }
+    #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
+    #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
+    .force-bgw {background: white}
+    @media (max-width: 600px) {
+        body { border-top: 16px solid #ffa100; }
+    }
+}
