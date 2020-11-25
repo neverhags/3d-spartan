@@ -1,0 +1,70 @@
+Change #1
+Edit configuration.h 
+You must enable the filament runout sensor, scroll down and enable the setting.  Should look something like this:
+
+
+#define FILAMENT_RUNOUT_SENSOR
+#if ENABLED(FILAMENT_RUNOUT_SENSOR)
+  #define FIL_RUNOUT_INVERTING true // set to true to invert the logic of the sensor. Set to true for the red mechanical end-stops
+  #define ENDSTOPPULLUP_FIL_RUNOUT // Uncomment to use internal pullup for filament runout pins if the sensor is defined.
+  #define FILAMENT_RUNOUT_SCRIPT "M600"
+#endif
+
+
+
+
+
+
+
+
+Change #2
+Edit configuration_adv.h
+You must enable Adanced pause feature
+( This are MY settings... Change the values to whatever you deem appropiate for your machine!!)
+
+#define ADVANCED_PAUSE_FEATURE
+#if ENABLED(ADVANCED_PAUSE_FEATURE)
+  #define PAUSE_PARK_X_POS 3                  // X position of hotend
+  #define PAUSE_PARK_Y_POS 3                  // Y position of hotend
+  #define PAUSE_PARK_Z_ADD 3                 // Z addition of hotend (lift)
+  #define PAUSE_PARK_XY_FEEDRATE 100          // X and Y axes feedrate in mm/s (also used for delta printers Z axis)
+  #define PAUSE_PARK_Z_FEEDRATE 5             // Z axis feedrate in mm/s (not used for delta printers)
+  #define PAUSE_PARK_RETRACT_FEEDRATE 60      // Initial retract feedrate in mm/s
+  #define PAUSE_PARK_RETRACT_LENGTH 2         // Initial retract in mm
+                                              // It is a short retract used immediately after print interrupt before move to filament exchange position
+  #define FILAMENT_CHANGE_UNLOAD_FEEDRATE 10  // Unload filament feedrate in mm/s - filament unloading can be fast
+  #define FILAMENT_CHANGE_UNLOAD_LENGTH 0   // Unload filament length from hotend in mm
+                                              // Longer length for bowden printers to unload filament from whole bowden tube,
+                                              // shorter length for printers without bowden to unload filament from extruder only,
+                                              // 0 to disable unloading for manual unloading
+  #define FILAMENT_CHANGE_LOAD_FEEDRATE 6     // Load filament feedrate in mm/s - filament loading into the bowden tube can be fast
+  #define FILAMENT_CHANGE_LOAD_LENGTH 0       // Load filament length over hotend in mm
+                                              // Longer length for bowden printers to fast load filament into whole bowden tube over the hotend,
+                                              // Short or zero length for printers without bowden where loading is not used
+  #define ADVANCED_PAUSE_EXTRUDE_FEEDRATE 3   // Extrude filament feedrate in mm/s - must be slower than load feedrate
+  #define ADVANCED_PAUSE_EXTRUDE_LENGTH 0    // Extrude filament length in mm after filament is loaded over the hotend,
+                                              // 0 to disable for manual extrusion
+                                              // Filament can be extruded repeatedly from the filament exchange menu to fill the hotend,
+                                              // or until outcoming filament color is not clear for filament color change
+  #define PAUSE_PARK_NOZZLE_TIMEOUT 900        // Turn off nozzle if user doesn't change filament within this time limit in seconds
+  #define FILAMENT_CHANGE_NUMBER_OF_ALERT_BEEPS 5 // Number of alert beeps before printer goes quiet
+  #define PAUSE_PARK_NO_STEPPER_TIMEOUT       // Enable to have stepper motors hold position during filament change
+                                              // even if it takes longer than DEFAULT_STEPPER_DEACTIVE_TIME.
+  #define PARK_HEAD_ON_PAUSE                  // Go to filament change position on pause, return to print position on resume
+  //#define HOME_BEFORE_FILAMENT_CHANGE       // Ensure homing has been completed prior to parking for filament change
+#endif
+
+
+
+
+Change #3
+Make the software use the right pin on motherboard.
+Scroll down the tab and look for the below code. 
+Here is where you will change the value to match the pin your using. 
+In both of my OSOYOO MKS Base v1.5 and Hictop red  MPX .3  i had open pins near the end stops with a label D11. Theres 3 pins, SIGNAL - NEG - POS. 
+I used  D11 because i wasnt able to find any online information regarding the proper pin 4 Marlin calls for. 
+
+
+
+// define digital pin 4 for the filament runout sensor. Use the RAMPS 1.4 digital input 4 on the servos connector
+#define FIL_RUNOUT_PIN     11 // Stock setting was 4.  Changed to 11 for pin D11 on the motherboard.
