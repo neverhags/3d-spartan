@@ -69,7 +69,7 @@
 //
 // Limit Switches
 //
-#define X_MIN_PIN           3
+#define X_MIN_PIN           2
 #ifndef X_MAX_PIN
   #define X_MAX_PIN         2
 #endif
